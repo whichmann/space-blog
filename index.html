@@ -4,19 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla JS Blog</title>
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>My Blog</h1>
+    <div class="window">
+      <div class="title-bar">
+        <h1 class="title">My Blog</h1>
+      </div>
       <form id="postForm">
-        <input type="text" id="title" placeholder="Title" required />
-        <textarea
-          id="body"
-          placeholder="Write your post here..."
-          required
-        ></textarea>
-        <button type="submit">Add Post</button>
+        <div class="standard-dialog center scale-down container">
+          <input
+            class="form-input"
+            type="text"
+            id="title"
+            placeholder="Title"
+            required
+          />
+          <textarea
+            class="form-input"
+            id="body"
+            placeholder="Write your post here..."
+            required
+          ></textarea>
+          <button class="btn form-btn" type="submit">Add Post</button>
+        </div>
       </form>
       <div id="posts"></div>
     </div>
