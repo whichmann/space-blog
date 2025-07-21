@@ -31,9 +31,7 @@ textarea:focus {
   position: relative;
   min-height: 5.5rem;
 }
-.post:last-child {
-  border-bottom: none;
-}
+
 .post-title {
   font-weight: bold;
   font-size: 1.1rem;
@@ -44,12 +42,16 @@ textarea:focus {
   margin-top: 0.3rem;
   font-family: inherit;
   font-size: 1rem;
+  font-family: Chicago_12;
 }
 .post-date {
   font-size: 0.85em;
   margin-top: 0.3rem;
-  font-family: inherit;
   margin-bottom: 0;
   margin-top: auto;
   align-self: flex-end;
+  font-family: Chicago_12;
+}
+.no-posts {
+  text-align: center;
 }
